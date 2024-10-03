@@ -38,6 +38,7 @@ app.get('/news', async (req, res) => {
         // Get the link to the detailed news
         const newsLink = $(element).find('h1.headline-title a').attr('href');
         const fullLink = `https://www.prothomalo.com${newsLink}`; // Ensure the link is complete
+        console.log(fullLink);
 
         // Only add the news if it contains 'Bancharampur' in title or description
         // if (title.includes('Bancharampur') || description.includes('Bancharampur')) {
